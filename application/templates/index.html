@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Welcome to Universal Tech Academy.</h1>
+            
+            {% if session['username'] %}
+            <h3>Let's get started.</h3>
+            {%else%}
+            <p>Already registered? <a href="{{url_for('login')}}">Login</a></p>
+            {% endif %}
+            <div style="text-align:left;">
+            <h2>What is HTML?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, exercitationem autem voluptatem sapiente sed porro ex. Earum consequatur libero repudiandae labore, totam et incidunt velit, voluptatem dolores perferendis expedita officiis, sit ratione aperiam aliquam nostrum maiores iste cupiditate sequi inventore! Aut aliquid dignissimos debitis optio incidunt quod, cumque quis at! Ipsa eos, facilis laudantium molestias mollitia hic velit rerum similique ab architecto nulla animi harum dolor aliquid numquam odit! Voluptates, aliquam nobis enim pariatur dolorem reprehenderit possimus voluptas iure minima ducimus et quos quasi corporis. Ipsam, aspernatur suscipit, recusandae et, expedita rerum consequuntur aliquam reiciendis ducimus perspiciatis enim odit atque.</p>
+    
+        </div>
+        </div>
+    </div>
+ {% endblock %}
+
+
+
